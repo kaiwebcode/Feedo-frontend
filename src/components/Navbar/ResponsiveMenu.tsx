@@ -1,8 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { NavbarMenu } from './data'
 import { Divider } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 const ResponsiveMenu = ({ open, setOpen }: { open: boolean, setOpen: (val: boolean) => void }) => {
+     const navigate = useNavigate()
     return (
         <AnimatePresence>
             {open && (
@@ -39,14 +41,22 @@ const ResponsiveMenu = ({ open, setOpen }: { open: boolean, setOpen: (val: boole
 
                         {/* Close Button at Bottom */}
                         <div className="flex flex-col gap-4 justify-center">
-                            <button className="px-6 py-2 rounded-full border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-black transition duration-200">
+                            <button 
+                            onClick={() => {
+                                    setOpen(false)
+                                    navigate('/login')
+                                }}
+                            className="px-6 py-2 rounded-full border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-black transition duration-200">
                                 Login
                             </button>
                             <button
-                                onClick={() => setOpen(false)}
+                                  onClick={() => {
+                                    setOpen(false)
+                                    navigate('/signup')
+                                }}
                                 className="px-6 py-2 rounded-full border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-black transition duration-200"
                             >
-                                Close Menu
+                               Sign up
                             </button>
                         </div>
                     </div>

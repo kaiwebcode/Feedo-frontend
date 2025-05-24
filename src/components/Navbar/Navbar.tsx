@@ -2,6 +2,7 @@ import { Close, Menu } from '@mui/icons-material'
 import React from 'react'
 import { NavbarMenu } from './data'
 import ResponsiveMenu from './ResponsiveMenu'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
@@ -11,10 +12,12 @@ const Navbar = () => {
       <nav className="w-full z-50 bg-black/30 backdrop-blur-md border-b border-slate-700 sticky top-0">
         <div className="container mx-auto px-4 lg:px-8 py-5 flex justify-between items-center">
           {/* Logo Section */}
+          <Link to="/" >
           <div className="flex items-center gap-2 text-2xl font-bold uppercase tracking-wider">
             <img src="/feedo_logo.png" alt="logo" className="h-10 w-10 rounded-md" />
             <p className="text-white">Fee<span className="text-sky-400">D</span>o</p>
           </div>
+          </Link>
 
           {/* Menu Section */}
           <ul className="hidden md:flex items-center gap-6 text-white font-medium">
