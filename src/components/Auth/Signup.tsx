@@ -39,7 +39,7 @@ const Signup = () => {
               label="Enter your full name"
               className="bg-zinc-950 rounded-lg" 
               variant="outlined"
-              // InputProps={{ style: { backgroundColor: '#1e293b', color: '#fff' } }}
+              InputProps={{ style:{ color: '#fff' } }}
               InputLabelProps={{ style: { color: '#94a3b8' } }}
             />
             <TextField
@@ -47,7 +47,7 @@ const Signup = () => {
               label="Your email address"
               type="email"
               variant="outlined"
-              // InputProps={{ style: { backgroundColor: '#1e293b', color: '#fff' } }}
+              InputProps={{ style: { color: '#fff' } }}
               className="bg-zinc-950 rounded-lg"
               InputLabelProps={{ style: { color: '#94a3b8' } }}
             />
@@ -58,7 +58,7 @@ const Signup = () => {
               variant="outlined"
               className="bg-zinc-950 rounded-lg"
               InputProps={{
-                // style: { backgroundColor: '#1e293b', color: '#fff' },
+                style: { color: '#fff' },
       
                 endAdornment: (
                   <InputAdornment position="end">
@@ -81,7 +81,7 @@ const Signup = () => {
               variant="outlined"
               className="bg-zinc-950 rounded-lg"
               InputProps={{
-                // style: { backgroundColor: '#1e293b', color: '#fff' },
+                style: { color: '#fff' },
                 endAdornment: (
                   <InputAdornment position="end">
                     <IconButton onClick={toggleConfirmPasswordVisibility} edge="end">
