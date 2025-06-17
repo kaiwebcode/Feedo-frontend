@@ -14,14 +14,14 @@ function App() {
 
   return (
     <>
-      <div className='overflow-x-hidden '>
+      <div className='overflow-x-hidden custom-scroll'>
 
         {/* <Navbar /> */}
-       <Routes>
-        <Route path="/" element={<Home />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/login" element={<Login />} />
-       </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </div>
     </>
   )

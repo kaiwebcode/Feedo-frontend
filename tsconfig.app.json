@@ -23,10 +23,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-     "baseUrl": ".",  // Set base directory
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]  // This creates the alias for `@/` to refer to `src/`
-    }
+      "@/*": ["src/*"]
+    },
+
+    "types": [] 
   },
   "include": ["src"]
 }

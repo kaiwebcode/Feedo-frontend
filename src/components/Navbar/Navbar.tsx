@@ -2,10 +2,11 @@ import { Close, Menu } from '@mui/icons-material'
 import React from 'react'
 import { NavbarMenu } from './data'
 import ResponsiveMenu from './ResponsiveMenu'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+   const navigate = useNavigate();
 
   return (
     <>
@@ -35,8 +36,9 @@ const Navbar = () => {
 
           {/* Login Button */}
           <div className="hidden md:block">
-            <button className="px-6 py-2 border-2 border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-black font-semibold rounded-md transition-all duration-200">
-              Login
+            <button className="px-3 py-2 border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-black font-semibold rounded-md transition-all duration-200"
+            onClick={() => navigate("/signup")}>
+              Get Started
             </button>
           </div>
 
