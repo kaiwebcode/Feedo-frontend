@@ -56,7 +56,7 @@ const ResponsiveMenu = ({ open, setOpen }: { open: boolean, setOpen: (val: boole
                                 }}
                                 className="px-6 py-2 rounded-full border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-black transition duration-200"
                             >
-                               Sign up
+                               Get Started
                             </button>
                         </div>
                     </div>
